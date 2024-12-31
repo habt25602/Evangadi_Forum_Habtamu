@@ -2,7 +2,8 @@ import axios from "axios";
 
 // Create an Axios instance
 const axiosBase = axios.create({
-  baseURL: "http://localhost:5550/api",
+  // baseURL: "http://localhost:3306/api",
+  baseURL: "https://evangadi-forum-habtamu-2024.onrender.com/api",
 });
 
 // Add a request interceptor
