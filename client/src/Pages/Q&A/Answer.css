@@ -1,0 +1,221 @@
+body {
+  background-color: #f4f4f4; /* Light background for better contrast */
+}
+
+.answer_container {
+  max-width: 80%; /* Limit the width of the container */
+  margin: 0 auto; /* Center the container */
+  padding: 20px; /* Add padding around the container */
+}
+
+.answer_wrapper {
+  background: white; /* White background for the wrapper */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+  padding: 20px; /* Padding inside the wrapper */
+}
+
+.answer_header {
+  border-bottom: 2px solid #fe8a0c; /* Blue line under the header */
+  margin-bottom: 15px; /* Space below the header */
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.answer_question h3 {
+  color: #333; /* Dark color for the question title */
+  font-size: 14px; /* Larger font size */
+  font-weight: 700;
+}
+
+.answer_community {
+  margin-top: 20px; /* Space above the header */
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.Answer {
+  display: flex; /* Use flexbox for layout */
+  justify-content: space-between; /* Space between content and actions */
+  align-items: flex-start; /* Align items at the start */
+  background-color: #f9f9f9; /* Light gray background for answers */
+  border-radius: 5px; /* Rounded corners */
+  padding: 15px; /* Padding around the content */
+  padding-right: 30px;
+  margin-bottom: 15px; /* Space below each answer */
+  transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+.Answer:hover {
+  background-color: #e9ecef; /* Slightly darker on hover */
+  cursor: pointer;
+}
+
+.answer_prof_pic {
+  flex: 0 0 2%;
+  margin-right: 15px; /* Space between profile picture and text */
+  align-items: center;
+}
+
+.answer_username {
+  font-weight: bold; /* Bold username */
+  flex: 0 0 10%; /* Prevents the username from growing */
+  align-items: center;
+}
+
+.answer_text {
+  flex: 0 0 68%; /* Take up 80% of the available space */
+  align-items: center;
+  color: #555; /* Gray color for answer text */
+  padding-right: 30px;
+}
+.answer_text p {
+  margin: 0;
+}
+.answer_actions {
+  flex: 0 0 10%;
+  display: flex; /* Flexbox for action icons */
+  gap: 10px;
+  justify-content: center; /* Center actions */
+  align-items: center;
+  padding-top: 1%;
+}
+
+.icon_edit,
+.icon_delete {
+  cursor: pointer; /* Pointer cursor for icons */
+  transition: color 0.3s; /* Smooth transition for color changes */
+}
+
+.icon_edit {
+  color: #ff9800; /* Orange color for edit icon */
+  margin-bottom: 5px; /* Space between icons */
+}
+
+.icon_edit:hover {
+  color: #e68900; /* Darker orange on hover */
+}
+
+.icon_delete {
+  color: #f44336; /* Red color for delete icon */
+}
+
+.icon_delete:hover {
+  color: #d32f2f; /* Darker red on hover */
+}
+
+.edit_form_overlay {
+  background-color: rgba(0, 0, 0, 0.05); /* Light overlay */
+  padding: 20px; /* Padding for overlay */
+  border-radius: 5px; /* Rounded corners */
+  margin-top: 20px; /* Space above overlay */
+}
+
+.question_description {
+  width: 100%; /* Full width for textareas */
+  padding: 10px; /* Padding inside textareas */
+  border: 1px solid #ccc; /* Light gray border */
+  border-radius: 5px; /* Rounded corners */
+  font-size: 1em; /* Font size */
+  margin-top: 10px; /* Space above the textarea */
+  resize: none; /* Prevent resizing */
+  transition: border-color 0.3s; /* Smooth transition for border color */
+}
+
+.question_description:focus {
+  border-color: #007bff; /* Blue border on focus */
+}
+
+.question_button {
+  background-color: #007bff; /* Primary button color */
+  color: white; /* White text */
+  border: none; /* Remove default border */
+  border-radius: 5px; /* Rounded corners */
+  padding: 10px 15px; /* Padding for button */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s; /* Smooth transition */
+}
+
+.question_button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+.question_post_link {
+  color: #007bff; /* Link color */
+  text-decoration: none; /* Remove underline */
+}
+
+.question_post_link:hover {
+  text-decoration: underline; /* Underline on hover */
+}
+.question_page_btn {
+  text-decoration: underline;
+  padding-top: 40px;
+  color: #007bff;
+  padding-right: 40px;
+}
+
+.question_page_btn a {
+  color: #007bff;
+}
+.page_btn {
+  display: flex;
+  justify-content: space-between;
+}
+.update_btn {
+  size: 40px;
+  padding: 5px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 40px;
+}
+
+.cancel_btn {
+  size: 40px;
+  padding: 5px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 40px;
+  background-color: #d32f2f;
+}
+
+.page-numbers {
+  display: flex;
+  gap: 10px;
+  cursor: pointer;
+  text-decoration: none;
+}
+.pagination-controls {
+  display: flex;
+  padding-left: 10px;
+  gap: 15px;
+  align-items: center;
+}
+.pagination-controls button {
+  
+  display: flex;
+  margin-top: 10px;
+  width: 150px;
+  height: 30px;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+  align-content: center;
+ justify-content: center;
+ gap: 10px;
+}
+
+
+
+
+
+@media (max-width: 768px) {
+  .Answer {
+    flex-direction: column; /* Stack items vertically on smaller screens */
+  }
+
+  .answer_actions {
+    justify-content: flex-start; /* Align actions to the left on small screens */
+    margin-top: 10px; /* Space above actions */
+  }
+}

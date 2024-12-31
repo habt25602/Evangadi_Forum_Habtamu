@@ -1,0 +1,71 @@
+.header_question {
+  display: flex;
+  align-items: center;
+  background-color: #f9f9f9; /* Light background for contrast */
+  border: 1px solid #e0e0e0; /* Subtle border */
+  border-radius: 8px; /* Rounded corners */
+  padding: 15px; /* Spacing around content */
+  margin: 10px 0; /* Space between questions */
+  transition: background-color 0.3s ease; /* Smooth background transition */
+}
+
+.header_question:hover {
+  background-color: #e0f7fa; /* Light blue on hover */
+}
+
+.question_user {
+  flex: 0 0 20%; /* Fixed width for user section */
+  display: flex;
+  align-items: center;
+  margin-right: 20px; /* Space between user and question */
+}
+
+.profile {
+  width: 40px; /* Fixed width for profile icon */
+  height: 40px; /* Fixed height for profile icon */
+  border-radius: 50%; /* Circle shape */
+  background-color: #ccc; /* Placeholder background */
+  margin-right: 10px; /* Space between profile and username */
+}
+
+.username {
+  font-weight: bold; /* Bold for emphasis */
+  color: #333; /* Darker text for contrast */
+}
+
+.question_title {
+  flex: 1; /* Allow title to fill the remaining space */
+  display: flex;
+  justify-content: space-between; /* Space out content */
+  align-items: center; /* Center vertically */
+}
+
+.question_content {
+  flex: 0 0 70%;
+  font-size: 1.2em; /* Larger font for question title */
+  color: #555; /* Medium gray for readability */
+}
+
+.question_arrow {
+  display: flex;
+  align-items: center; /* Center icons vertically */
+  flex: 0 0 5%; /* Fixed width for arrow section */
+}
+
+.question_arrow div {
+  margin-left: 10px; /* Space between icons */
+  cursor: pointer; /* Pointer cursor for clickable items */
+  color: #ff5722; /* Color for delete icon */
+}
+
+.question_arrow div:hover {
+  color: #d32f2f; /* Darker red on hover for delete icon */
+}
+
+.question_arrow svg {
+  transition: transform 0.3s ease; /* Smooth rotation transition */
+}
+
+.question_arrow svg:hover {
+  transform: scale(1.1); /* Slightly enlarge on hover */
+}

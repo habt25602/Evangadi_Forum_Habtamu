@@ -1,0 +1,193 @@
+/* .homepage{
+    margin-top: 84px;
+}
+.head{
+    padding-top: 45px;
+}
+
+.qb{
+    background-color:#516CF0!important ;
+    width: 200px;
+    height: 40px;
+     border: none;
+     border-radius: 5px;
+     color: #fff;
+}
+.qb:hover{ 
+    background-color: #FE8402!important;
+}
+.askque{
+  margin-bottom: 20px;
+} */
+
+.container {
+  max-width: 1200px; /* Limit the maximum width */
+  margin: 0 auto; /* Center the container */
+  padding: 20px; /* Padding around the container */
+}
+
+.homepage {
+  background-color: #f8f9fa; /* Light background for the homepage */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  padding: 10px; /* Padding inside the homepage */
+  height: 70px;
+}
+
+.head {
+  height: auto;
+  /* display: flex; */
+  justify-content: space-between; /* Space between elements */
+  align-items: center; /* Center vertically */
+  margin-bottom: 20px; /* Margin below the header */
+}
+
+.askque {
+  margin-bottom: 20px; /* Space below the ask question section */
+}
+
+.qb {
+  background-color:#3B455A; /* Bootstrap primary color */
+  color: white; /* White text for contrast */
+  border: none; /* Remove default border */
+  border-radius: 5px; /* Rounded corners */
+  padding: 10px 20px; /* Padding inside the button */
+  font-size: 16px; /* Font size */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s ease; /* Smooth background transition */
+}
+
+.qb:hover {
+  background-color:#FE8A0C; /* Darker blue on hover */
+}
+
+.wel {
+  display: flex;
+  font-size: 1.2em; /* Slightly larger font for welcome message */
+  color: #333; /* Darker color for text */
+  align-items: center;
+  margin: 0;
+  justify-content: end;
+  padding-top: 10px;
+  padding-right: 30px;
+}
+
+.ns {
+  font-size: 1.5em; /* Larger font for questions heading */
+  margin-bottom: 20px; /* Space below the heading */
+  color: #555; /* Medium gray */
+  max-width: 1200px; /* Limit the maximum width */
+  margin: 0 auto; /* Center the container */
+  padding: 20px; /* Padding around the container */
+  transition: background-color 0.3s ease; /* Smooth background transition */
+  background-color: #f8f9fa; /* Light background for the homepage */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  padding: 20px; /* Padding inside the homepage */
+  margin-top: 20px;
+  display: flex;
+}
+.question_title {
+  flex: 0 0 20%;
+}
+
+.search_box {
+  z-index: 1;
+  position: relative; /* Set position to relative for absolute positioning of the icon */
+  flex: 0 0 76%; /* Set a width for the search box */
+}
+
+.search_box input {
+  font-size: 16px;
+  border: none;
+  outline: solid 1px orange;
+  width: 100%; /* Full width of the container */
+  padding: 5px 40px 5px 20px; /* Add padding for text and space for the icon */
+  border-radius: 4px; /* Rounded corners */
+}
+.search_box input:focus {
+  outline: solid 2px red;
+  transition: cubic-bezier(0.23, 1, 0.32, 1);
+  transition-duration: 0.5s;
+}
+
+.search_box .icon {
+  position: absolute; /* Position the icon absolutely */
+  right: 10px; /* Space from the left */
+  top: 50%; /* Center vertically */
+  transform: translateY(-50%); /* Adjust for vertical centering */
+  color: orange; /* Color for the icon */
+}
+
+button {
+  background-color: orange; /* Green button color */
+  color: white; /* White text for contrast */
+  border: none; /* Remove default border */
+  border-radius: 5px; /* Rounded corners */
+  padding: 10px 15px; /* Padding inside the button */
+  font-size: 16px; /* Font size */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s ease; /* Smooth background transition */
+  margin-right: 10px; /* Space between buttons */
+}
+
+button:hover {
+  background-color: #3B455A; /* Darker green on hover */
+}
+
+.Toastify__toast {
+  background-color: #343a40; /* Dark background for toast */
+  color: white; /* White text */
+  border-radius: 5px; /* Rounded corners */
+}
+.search_box {
+  position: relative; /* Keep this to position suggestions relative to the search box */
+}
+
+.suggestions {
+  list-style-type: none; /* Remove bullet points */
+  padding: 0; /* Remove padding */
+  margin: 40px; /* Remove margin */
+  border: 1px solid #ccc; /* Add border */
+  background: white; /* Background color */
+  position: absolute; /* Position it below the search box */
+  z-index: 10; /* Ensure it appears above other elements */
+  width: 845px; /* Match width of the search box */
+  max-height: 200px; /* Limit height */
+  overflow-y: auto; /* Add scroll if too many suggestions */
+  left: 25.5%; /* Align to the left of the search box */
+}
+.suggestions li {
+  padding: 10px; /* Padding for each suggestion */
+  cursor: pointer; /* Pointer cursor on hover */
+  font-size: small;
+}
+
+.suggestions li:hover {
+  background-color: #f0f0f0; /* Highlight on hover */
+}
+
+.page-numbers {
+  display: flex;
+  gap: 10px;
+  cursor: pointer;
+  text-decoration: none;
+}
+.pagination-controls {
+  display: flex;
+  padding-left: 10px;
+  gap: 15px;
+  align-items: center;
+}
+.pagination-controls button {
+  display: flex;
+  margin-top: 10px;
+  width: 150px;
+  height: 30px;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+  align-content: center;
+ justify-content: center;
+ gap: 10px;
+}
